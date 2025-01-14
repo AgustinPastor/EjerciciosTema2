@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class EjerciciosTema2 {
 
 //EJERCICIOS IF
-        //Ejercicio 1
+    //Ejercicio 1
             /*
                  Hágase un programa que lea dos enteros y compruebe si el primero es o no mayor que el segundo.
                  En la salida se mostrará “El primero es mayor que el segundo” o “El primero no es mayor que el segundo”.
@@ -22,7 +22,7 @@ public class EjerciciosTema2 {
                     }
                 }
             */
-        //Ejercicio 2
+    //Ejercicio 2
             /*
             Hágase un programa que lea tres enteros positivos, y compruebe si alguno es suma de los otros dos.
             En la salida se mostrará “Ninguno es suma de los otros dos” o “8 = 2 + 6”
@@ -49,7 +49,7 @@ public class EjerciciosTema2 {
                 }
             }
             */
-        //Ejercicio 3
+    //Ejercicio 3
             /*
                 Léase un número entero. Se comprobará si dicho número es o no múltiplo de 20, y también se comprobará si está o
                 no entre -100 y 100. En la salida se mostrará uno de los siguientes menasajes:
@@ -71,7 +71,7 @@ public class EjerciciosTema2 {
                     }
                 }
                 */
-        //Ejercicio 4
+    //Ejercicio 4
             /*
                 4. Hágase un programa que compruebe si un año pedido por teclado es bisiesto. En la salida se mostrará o
                 “Es bisiesto” o “No es bisiesto”,)
@@ -91,7 +91,7 @@ public class EjerciciosTema2 {
 
                 }
             */
-        //Ejercicio 5
+    //Ejercicio 5
             /*
                 5. Determinar si un número natural de 4 dígitos (entre 1000 y 9999) es capicúa. Se comprobará previamente que el
                 número introducido tiene 4 dígitos. En la salida se mostrará uno de los siguientes mensajes:
@@ -116,7 +116,7 @@ public class EjerciciosTema2 {
                     }
                 }
                 */
-        //Ejercicio 6
+    //Ejercicio 6
             /*
                 Introducir tres enteros entre -100 y 100. De cumplir los tres números la condición del rango, se obtendrá
                 la suma de sus inversos (1/número ). En el caso de no estar alguno de los numeros en el rango se mostrará el
@@ -160,7 +160,7 @@ public class EjerciciosTema2 {
 
                 }
             */
-        //Ejercicio 7
+    //Ejercicio 7
             /*
                 7. Un número de 3 cifras es un número de Armstrong si la suma de sus dígitos elevado a 3 coincide con dicho número.
                 Por ejemplo, 153 = 1+125+27. Dado un número de 3 cifras determinar si es o no un número Armstrong. Se comprobará
@@ -185,7 +185,7 @@ public class EjerciciosTema2 {
 
                 }
             */
-        //Ejercicio 8
+    //Ejercicio 8
              /* Leer tres enteros y mostrarlos ordenados.
 
 
@@ -240,7 +240,7 @@ public class EjerciciosTema2 {
 
                     }
             */
-        //Ejercicio 9
+    //Ejercicio 9
             /*
                 Se leen tres enteros y se comprobará si son o no consecutivos. Se mostrará en la salida
                 “Son consecutivos” o “No son consecutivos”.
@@ -273,7 +273,7 @@ public class EjerciciosTema2 {
                     }
                 }
             */
-        //Ejercicio 10
+    //Ejercicio 10
             /*
                 Se lee un número entero. Dicho número se incrementará en una unidad si es par, y se decrementará en una unidad
                 si es impar. Se muestra por consola el nuevo valor del número.
@@ -295,7 +295,7 @@ public class EjerciciosTema2 {
 
                 }
                 */
-        //Ejercicio 11
+    //Ejercicio 11
              /*
         Se leen tres enteros y un valor booleano para ordenarlos ascendentemente o descendentemente.
         Se mostrarán los valores leídos ordenados.
@@ -365,7 +365,7 @@ public class EjerciciosTema2 {
         }
 
          */
-        //Ejercicio 12
+    //Ejercicio 12
             /*
         12. Leer un número entero, se realizarán las siguientes acciones:
         - incrementará en 2 unidades si es par
@@ -396,7 +396,7 @@ public class EjerciciosTema2 {
 
         }
     */
-        //Ejercicio 13
+    //Ejercicio 13
              /*
         Pedir el día, mes y año de una fecha e indicar si la fecha es correcta. Con meses de 28, 30 y 31 días.
          Sin años bisiestos.
@@ -444,7 +444,7 @@ public class EjerciciosTema2 {
             }
         }
         */
-        //Ejercicio 14
+    //Ejercicio 14
              /*
         Pedir el día, mes y año de una fecha correcta y mostrar la fecha del día siguiente. suponer que todos los meses
         tienen 30 días excepto febrero que tiene 28.
@@ -497,7 +497,7 @@ public class EjerciciosTema2 {
     */
 
 //EJERCICIOS SWITCH
-        //Ejercicio 1
+    //Ejercicio 1
              /*
         Escribe un programa en Java que solicite al usuario ingresar un número del 1 al 7
         y muestre el día de la semana correspondiente utilizando una sentencia switch.
@@ -540,7 +540,7 @@ public class EjerciciosTema2 {
 
         }
     */
-        //Ejercicio 2
+    //Ejercicio 2
              /*
         Crea un programa que permita al usuario ingresar un carácter y luego determine si es una vocal o una consonante
         utilizando una sentencia switch
@@ -570,7 +570,7 @@ public class EjerciciosTema2 {
         }
     }
     */
-        //Ejercicio 3
+    //Ejercicio 3
              /*
     Desarrolla un programa que reciba un número entero y, utilizando una sentencia switch, determine si es par o impar.
 
@@ -594,7 +594,7 @@ public class EjerciciosTema2 {
         }
 
     */
-        //Ejercicio 4
+    //Ejercicio 4
              /*
             Realiza un programa que solicite al usuario ingresar un mes (como un número del 1 al 12)
             y muestre la cantidad de días que tiene ese mes, considerando años no bisiestos.
@@ -627,7 +627,7 @@ public class EjerciciosTema2 {
         }
 
     */
-        //Ejercicio 5
+    //Ejercicio 5
              /*
         Escribe un programa que pida al usuario ingresar un número del 1 al 12
         y muestre el nombre del mes correspondiente utilizando una sentencia switch.
@@ -685,7 +685,7 @@ public class EjerciciosTema2 {
 
         }
     */
-        //Ejercicio 6
+    //Ejercicio 6
             /*
         Crea un programa que permita al usuario ingresar un número del 1 al 4 y muestre un mensaje diferente para cada
         número utilizando una sentencia switch (por ejemplo, "Opción 1 seleccionada", "Opción 2 seleccionada", etc.).
@@ -727,7 +727,7 @@ public class EjerciciosTema2 {
 
 
     */
-        //Ejercicio 7
+    //Ejercicio 7
             /*
         Desarrolla un programa que solicite al usuario ingresar una nota del 1 al 5 y muestre un mensaje de calificación
         utilizando una sentencia switch (por ejemplo, "Suspenso", "Aprobado", "Notable", "Sobresaliente", etc.).
@@ -759,7 +759,7 @@ public class EjerciciosTema2 {
 
         }
     */
-        //Ejercicio 8
+    //Ejercicio 8
             /*
              Realiza un programa que pida al usuario ingresar un carácter que represente una operación matemática (+, -, *, /)
              y dos números. Luego, utiliza una sentencia switch para realizar la operación correspondiente y mostrar el resultado.
@@ -803,7 +803,7 @@ public class EjerciciosTema2 {
             }
     }
     */
-        //Ejercicio 9
+    //Ejercicio 9
             /*Escribe un programa que solicite al usuario ingresar un número del 1 al 12 y muestre la estación del año
         correspondiente (por ejemplo, "Primavera", "Verano", "Otoño", "Invierno") utilizando una sentencia switch.
 
@@ -836,7 +836,7 @@ public class EjerciciosTema2 {
         }
 
     */
-        //Ejercicio 10
+    //Ejercicio 10
             /*
         Crea un programa que permita al usuario ingresar un código de producto (como una cadena de caracteres) y,
         utilizando una sentencia switch, muestre el nombre del producto y su precio correspondiente
@@ -879,8 +879,8 @@ public class EjerciciosTema2 {
     */
 
 //EJERCICIOS FOR
-        //Ejercicio 1
-            /*
+    //Ejercicio 1
+        /*
             Se leerá el número de temperaturas a introducir (de ser 0 o negativo se establecerá a 10).
             Obténgase la media con dos decimales de las temperaturas introducidas por consola. (TemperaturasIntroducidas)
 
@@ -903,8 +903,8 @@ public class EjerciciosTema2 {
                 System.out.printf("La temperatura media es de %.2f\n",sumaTemp/nTemp);
          }
         */
-        //Ejercicio 2
-            /*
+    //Ejercicio 2
+        /*
             Leer un número entre 0 y 10. Se mostrará la tabla de multiplicar de dicho número con el
             formato: 5 x 3 = 15 (desde 0 hasta 10 en líneas distintas). (TablaDeMultiplicar)
 
@@ -923,8 +923,8 @@ public class EjerciciosTema2 {
 
         }
      */
-        //Ejercicio 3
-            /*
+    //Ejercicio 3
+        /*
             Modificar el ejercicio anterior para calcular la tabla de multiplicar de todos los números (TablaTodos)
 
         public static void main(String[] args) {
@@ -938,8 +938,8 @@ public class EjerciciosTema2 {
 
         }
      */
-        //Ejercicio 4
-            /*
+    //Ejercicio 4
+        /*
             Modificar el ejercicio anterior para calcular la tabla de multiplicar de los números comprendidos en un
             rango de números pedidos. Por ejemplo, las tablas de los números comprendidos entre el 3 y el 7 (3,4,5,6,7)
 
@@ -956,7 +956,7 @@ public class EjerciciosTema2 {
 
         }
         */
-        //Ejercicio 5
+    //Ejercicio 5
         /*
         Dado dos enteros entre 0 y 5 (la base y el exponente), obtener la potencia del primero elevado al segundo
         sin utilizar el método “pow”. Por ejemplo, base = 3 y exponente = 5, 35=3x3x3x3x3=243.
@@ -978,7 +978,7 @@ public class EjerciciosTema2 {
 
         }
     */
-        //Ejercicio 6
+    //Ejercicio 6
         /*
         Mostrar todos los números pares comprendidos entre dos dados. (ParesEntreDosDados)
 
@@ -997,7 +997,7 @@ public class EjerciciosTema2 {
 
         }
         */
-        //Ejercicio 7
+    //Ejercicio 7
         /*
     Simúlese el lanzamiento de un dado. Se introducirá el número de veces que se lanza el dado
     (de no ser positivo, se establecerá a 100). (Dado)
@@ -1017,7 +1017,7 @@ public static void main(String[] args) {
 
 }
 */
-        //Ejercicio 8
+    //Ejercicio 8
         /*
         Pedir 10 números. Mostrar la media de los números positivos,
         la media de los números negativos y la cantidad de ceros (NumerosTipos)
@@ -1047,7 +1047,7 @@ public static void main(String[] args) {
     System.out.println("El nº de ceros es: "+(numeroCeros));
 }
   */
-        //Ejercicio 9
+    //Ejercicio 9
          /*
     Pedir 10 sueldos. Mostrar su suma, media y cuantos hay mayores de 1000€.(Sueldos)
 
@@ -1075,7 +1075,7 @@ public static void main(String[] args) {
     }
 
      */
-        //Ejercicio 10
+    //Ejercicio 10
         /*
         Introduce  6 notas, escribir la cantidad de alumnos aprobados, condicionados (=4) y suspensos.(NotasTipos)
 
@@ -1103,7 +1103,7 @@ public static void main(String[] args) {
 }
 
          */
-        //Ejercicio 11
+    //Ejercicio 11
         /*
         Dibujar por consola un Cuadrado de + . Para ello se pedirá por consola el tamaño del lado
         y se imprimirá el cuadrado con el siguiente formato (CuadradoFor)
@@ -1138,7 +1138,7 @@ public static void main(String[] args) {
     }
 
          */
-        //Ejercicio 12
+    //Ejercicio 12
         /*
         Modificar el ejercicio anterior para dibujar un cuadrado donde las aristas exteriores tengan el
         caracter - y la parte inferior del cuadrado tenga el caracter +. (CuadradoFormato)
@@ -1166,13 +1166,57 @@ public static void main(String[] args) {
 }
 
          */
-        //Ejercicio 13
+    //Ejercicio 13
         /*
         Pedir una palabra por teclado y mostrar su contraria. Por ejemplo se introducirá la palabra programacion
         y se mostrará por consola la palabra noicamargorp (InversaPalabra)
-         */
 
-}//hola estoy probando a
+
+    public static void main(String[] args) {
+        String palabra = "Programación";
+
+        for (int i = palabra.length() - 1; i >= 0; i--) {
+            System.out.print(palabra.charAt(i));
+        }
+      }
+ */
+    //Ejercicio 14
+        /*
+    Pedir una palabra por teclado y comprobar si es o no palindromo. Una palabra es palíndromo cuando se lee igual
+    de izquierda a derecha que de derecha a izquierda. Por ejemplo ana, oro, radar. Para poder hacer la comprobación no se tendrán en cuenta mayusculas ni acentos (CapicuaPalabra)
+
+public static void main(String[] args) {
+    Scanner scanner=new Scanner(System.in);
+        System.out.println("Introduce la palabra:");
+    String palabra = scanner.next();
+    boolean esPalindromo=false;
+
+    for (int i =0; i<=palabra.length()/2; i++) {
+        if (palabra.charAt(i)==palabra.charAt(palabra.length()-1-i)){
+            esPalindromo=true;
+        } else {
+            esPalindromo=false;
+        }
+
+    }
+            if (esPalindromo){
+                System.out.println("La palabra " +palabra+" es palindroma");
+            } else {
+            System.out.println("La palabra " +palabra+" no es palindroma");
+            }
+}
+
+
+
+
+
+
+
+
+     */
+
+
+}
 
 
 
