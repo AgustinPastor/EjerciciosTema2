@@ -1277,6 +1277,62 @@ public static void main(String[] args) {
     }
 
      */
+    //Ejercicio 16
+        /*
+    Crear un programa que permita realizar un juego de adivinación. Para ello el sistema nada más empezar generará
+    un número aleatorio entre 1 y 30. Tras la generación de este número el usuario contará con 10 intentos para poder
+    adivinarlo. Para lo cual se irá pidiendo un números y en el caso de aceptarlo terminará el proceso con el mensaje
+    "Has adivinado el número en X intentos". En el caso de agotar los intentos aparecerá el menaje
+    "Lo siento, has agotado todos los intentos”
+
+
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int num= (int)(Math.random()*30)+1;
+
+        int intentos=0;
+
+        for (int i=0;i<10;i++){
+            System.out.println("Intente adivinar:");
+            int nAdivinar= scanner.nextInt();
+
+            if (nAdivinar==num){
+                System.out.println("¡Enorabuena!¡Número adivinado!");
+                break;
+            } else {
+                System.out.println("No has acertado.Pruebe de nuevo.");
+                intentos++;
+            }
+            if (intentos==10){
+                System.out.println("Lo sentimos, se le han acabado los intentos.");
+
+            }
+        }
+
+
+    }
+*/
+    //Ejercicio 17
+        /*
+Calcular el factorial de un número entre 0 y 20. El factorial de un número se define del
+siguiente modo: F(0) = 1; F(1) = 1; F(n) = n(n-1)(n-2) ... 1 siendo n>1. (Factorial)
+
+
+    public static void main(String[] args) {
+        int numero=15;
+        long factorial=1;
+        for (int i=1;i<numero;i++){
+            factorial*=i;
+        }
+        System.out.printf("El factorial de %d es %d",numero,factorial);
+    }
+ */
+
+//EJERCICIOS WHILE-DO WHILE
+    //Ejercicio 1
+    /*
+
+     */
 }
 
 
