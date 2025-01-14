@@ -1214,9 +1214,71 @@ public static void main(String[] args) {
 
 
      */
+    //Ejercicio 15
+        /*
+    15. Pedir por consola una frase. Una vez introducida. Indicar:
+    1. Cuantas oraciones tiene
+    2. Cuantas letras tiene
+    3. Cuantas palabras tiene
+    4. Cuantas letras tiene (sin contar espacios ni símbolos de puntuación)
 
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Pedir la frase al usuario
+        System.out.println("Introduce una frase:");
+        String frase = scanner.nextLine();
+
+        // Inicializar los contadores
+        int oraciones = 0;
+        int letras = 0;
+        int palabras = 0;
+        int letrasSinEspacios = 0;
+
+        // Variables para verificar si es una nueva palabra
+        boolean enPalabra = false;
+
+        // Recorrer cada carácter de la frase
+        for (int i = 0; i < frase.length(); i++) {
+            char c = frase.charAt(i);
+
+            // Contar oraciones (por los signos de puntuación)
+            if (c == '.' || c == '!' || c == '?') {
+                oraciones++;
+            }
+
+            // Contar letras
+            if (Character.isLetter(c)) {
+                letras++;
+                letrasSinEspacios++;  // Solo contar letras alfabéticas para este caso
+                enPalabra = true; // Estamos dentro de una palabra
+            }
+
+            // Contar palabras (cuando encontramos un espacio o un salto de línea)
+            if (c == ' ' || c == '\n' || c == '\t') {
+                if (enPalabra) {
+                    palabras++;
+                    enPalabra = false; // Hemos salido de una palabra
+                }
+            }
+        }
+
+        // Si la última parte de la frase también es una palabra (sin espacio al final)
+        if (enPalabra) {
+            palabras++;
+        }
+
+        // Mostrar los resultados
+        System.out.println("1. La frase tiene " + oraciones + " oraciones.");
+        System.out.println("2. La frase tiene " + letras + " letras.");
+        System.out.println("3. La frase tiene " + palabras + " palabras.");
+        System.out.println("4. La frase tiene " + letrasSinEspacios + " letras (sin contar espacios ni símbolos de puntuación).");
+    }
+
+     */
 }
+
 
 
 
