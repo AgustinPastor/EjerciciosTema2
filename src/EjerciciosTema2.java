@@ -1,7 +1,35 @@
+import com.sun.source.doctree.EscapeTree;
+
 import java.util.Scanner;
 
 public class EjerciciosTema2 {
+        //Ejercicio binario, octal, hexadecimal
+            /*
+    Introducir un entero no negativo, y convertirlo a binario, octal y hexadecimal. (BinarioOctalHexadecimal)
 
+    public static void main(String[] args) {
+        System.out.println("Escribe el numero entero positivo:");
+        Scanner scanner=new Scanner(System.in);
+        int numero= scanner.nextInt();
+
+        if (numero<0){
+        System.out.println("El numero debe ser positivo:");
+        return;
+        }
+
+        String binario = Integer.toBinaryString(numero);
+        String octal = Integer.toOctalString(numero);
+        String hexa = Integer.toHexString(numero).toUpperCase();
+
+        System.out.println("Número original: " + numero);
+        System.out.println("Binario: " + binario);
+        System.out.println("Octal: " + octal);
+        System.out.println("Hexadecimal: " + hexa);
+
+
+    }
+
+     */
 //EJERCICIOS IF
     //Ejercicio 1
             /*
@@ -1413,12 +1441,110 @@ public static void main(String[] args) {
 
          */
     //Ejercicio 3
-    /*
+        /*
     Generar números enteros aleatorios entre 0 y 100 hasta obtener el 0. El programa mostrará cada uno de
     los datos generados y obtendrá el mayor de los números generados. (MayorNumero)
-     */
+
+
+public static void main(String[] args) {
+    int aleatorio;
+    int max=0;
+
+    do {
+        aleatorio= (int) (Math.random()*101);
+        System.out.println(aleatorio);
+            if (aleatorio>max){
+                max=aleatorio;
+            }
+   } while (aleatorio!=0);
+
+        System.out.println("El maximo numero generado es "+max);
+
 }
 
+     */
+    //Ejercicio 5
+        /*
+        Crea un programa que genere un número aleatorio (entre 0 y 20) de entrada y lo guarde en una variable.
+        El sistema irá pidiendo números al usuario hasta que coincida con el aleatorio generado
+        (en caso de no coincidir mostrará el mensaje "Lo siento, intentalo de nuevo").
+        Cuando coincida el sistema deberá mostar el mensaje "Enhorabuena, has acertado el número en 5 intentos" (Adivina)
+
+
+    public static void main(String[] args) {
+        int aleatorio=(int)(Math.random()*21);
+        int numero;
+        int intentos=0;
+        do {
+            System.out.println("Intenta adivinar el número:");
+            Scanner scanner=new Scanner(System.in);
+            numero= scanner.nextInt();
+            intentos++;
+            if (aleatorio!=numero){
+            System.out.println("Lo siento, intentalo de nuevo");
+            }
+
+        }while (aleatorio!=numero);
+
+            System.out.printf("Enhorabuena, has acertado el número en %d intentos",intentos);
+
+    }
+
+         */
+    //Ejercicio 6
+        /*
+    6. Modifica el ejercicio anterior para que una vez adivinado el número
+    el sistema muestre el siguiente mensaje: "Quieres volver a jugar (S/N)":
+        - En caso de introducir N la aplicación se detendrá
+        - En caso de introducir S la aplicación empezará de nuevo
+        (generando un aleatorio, pidiendo números hasta acertar el generado, etc...)
+        Cuando el usuario acierte el número generado se mostrará un mensaje diciendo si ha superado el record
+        de intentos (si ha hecho menos intentos que las veces anteriores) (AdivinaRecord)
+
+
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int aleatorio;
+        int intentosAnteriores=1000;
+        char respuesta;
+
+        do {
+        aleatorio=(int)(Math.random()*21);
+        int numero;
+        int intentos=0;
+        System.out.println("Intenta adivinar el número:");
+            do {
+                System.out.println("Introduce un número:");
+                numero= scanner.nextInt();
+                intentos++;
+                if (aleatorio!=numero){
+                    System.out.println("Lo siento, intentalo de nuevo");
+                }
+
+            }while (aleatorio!=numero);
+
+        System.out.printf("Enhorabuena, has acertado el número en %d intentos\n", intentos);
+
+        if (intentos<intentosAnteriores){
+            System.out.println("¡Nuevo récord! Lo has adivinado en menos intentos que la vez anterior.");
+            intentosAnteriores=intentos;
+        }
+        System.out.print("Quieres volver a jugar(S/N):");
+            respuesta=scanner.next().charAt(0);
+
+        } while (respuesta == 'S' || respuesta == 's');
+
+
+        System.out.println("Gracias por jugar.");
+        System.out.println("Cerrando el programa...");
+
+
+
+    }
+
+         */
+
+}
 
 
 
