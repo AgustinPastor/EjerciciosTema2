@@ -1,9 +1,10 @@
 import com.sun.source.doctree.EscapeTree;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class EjerciciosTema2 {
-        //Ejercicio binario, octal, hexadecimal
+    //Ejercicio binario, octal, hexadecimal
             /*
     Introducir un entero no negativo, y convertirlo a binario, octal y hexadecimal. (BinarioOctalHexadecimal)
 
@@ -1543,8 +1544,178 @@ public static void main(String[] args) {
     }
 
          */
+    //Ejercicio 7
+        /*
+        Realizar un menú de 4 opciones, donde se mostrará por pantalla el siguiente formato
+        - Bienvenido a la aplicación del menú - 1. Opción1 - 2. Opción2 - 3. Opción3 - 4. Opción4
+        - 5. Salir - Introduce la opción seleccionada
+        Una vez mostrado la última línea, el sistema esperará a que el usuario introduzca un dato.
+        Dependiendo de la opción seleccionada aparecerá un mensaje por pantalla que ponga "La opción seleccionada es X".
+        En el caso de meter una diferente pondrá "opción no contemplada".
+        El programa se repetiría hasta que introduzca el 5 (MenuSimple)
 
+    public static void main(String[] args) {
+
+         int opcion=0;
+         Scanner scanner=new Scanner(System.in);
+        do {
+                System.out.println("Bienvenido a la aplicación del menú:");
+                System.out.println("\t1.Opción 1");
+                System.out.println("\t2.Opción 2");
+                System.out.println("\t3.Opción 3");
+                System.out.println("\t4.Opción 4");
+                System.out.println("\t5.Salir");
+                System.out.print("Introduce la opción que quieras realizar:");
+                opcion = scanner.nextInt();
+                switch (opcion){
+                    case 1:
+                        System.out.println("La opción seleccionada es 1");
+                        break;
+                    case 2:
+                        System.out.println("La opción seleccionada es 2");
+                        break;
+                    case 3:
+                        System.out.println("La opción seleccionada es 3");
+                        break;
+                    case 4:
+                        System.out.println("La opción seleccionada es 4");
+                        break;
+                    case 5:
+                        System.out.println("Saliendo del programa...");
+                        break;
+                    default:
+                        System.out.print("opción no contemplada");
+                        break;
+
+                }
+        }while (opcion!=5);
+
+        System.out.print("Fin del menú");
+
+    }
+         */
+    //Ejercicio 8
+        /*Modifica el ejercicio anterior para hacer una calculadora. Nada más ejecutar se mostrarán
+        las opciones disponibles - Bienvenido a la aplicación de calculos - Introduce operando uno:
+        - Introduce operando dos: - 1. Sumar - 2. Restar - 3. Multiplicar - 4. Dividir - 5. Módulo - 6. Salir -
+        Selecciona la operacion que quieres realizar.
+        Al seleccionar una de las opciones el sistema realizará la operación correspondiente y mostrará el resultado
+        por pantalla de la siguiente forma "El resultado de la operación es:".
+        Una vez terminada la operación volverá a mostrar el menú y pedir dos números nuevos. (MenuCalculo)
+
+public static void main(String[] args) {
+
+    int opcion=0;
+    double num1=0.0;
+    double num2=0.0;
+    Scanner scanner=new Scanner(System.in);
+    System.out.println("Bienvenido a la aplicación de cálculos:");
+    do {
+        System.out.println("\t1.Sumar");
+        System.out.println("\t2.Restar");
+        System.out.println("\t3.Multiplicar");
+        System.out.println("\t4.Dividir");
+        System.out.println("\t5.Módulo");
+        System.out.println("\t6. Salir");
+        System.out.print("Selecciona la opción que quieres realizar:");
+        opcion = scanner.nextInt();
+        if (opcion>0 && opcion<6){
+        System.out.print("Indica el primer numero:");
+        num1 = scanner.nextDouble();
+        System.out.print("Indica el segundo numero:");
+        num2 = scanner.nextDouble();
+        }
+        switch (opcion){
+            case 1:
+                double suma=num1+num2;
+                System.out.println("El resultado de la operación es: "+suma);
+                break;
+            case 2:
+                double resta=num1-num2;
+                System.out.println("El resultado de la operación es: "+resta);
+                break;
+            case 3:
+                double multi=num1*num2;
+                System.out.println("El resultado de la operación es: "+multi);
+                break;
+            case 4:
+                double dividir=num1/num2;
+                System.out.println("El resultado de la operación es: "+dividir);
+                break;
+            case 5:
+                double modulo=num1%num2;
+                System.out.println("El resultado de la operación es: "+modulo);
+                break;
+            case 6:
+                System.out.println("Saliendo del programa...");
+                break;
+            default:
+                System.out.print("Opción no contemplada");
+                break;
+        }
+    }while (opcion!=6);
+
+    System.out.print("Fin del menú");
 }
+*/
+    //Ejercicio 9
+        /*
+        3. Modifica el ejercicio 9 para hacer una calculadora de cambios de base. Nada más ejecutar se mostrarán
+        las opciones disponibles - Bienvenido a la aplicación de cambios de base
+    - Introduce el número que quieres cambiar de base:
+    - Pasar a base2
+    - Pasar a base8
+    - Pasar a base16
+    - Salir
+    - Selecciona la base a la que quieres pasar
+    Al introducir un número el sistema comprobará que es mayor que 0. En caso de no serlo mostrará el mensaje
+    "No válido, introduce otro", esperando una nueva introducción de datos. Una vez introducido, al seleccionar una
+    de las opciones el sistema realizará la conversión correspondiente y mostrará el resultado por pantalla de la
+    siguiente forma "El número XX en base10 es igual que XX en baseXX". Una vez terminada la operación volverá a
+    mostrar el menú y pedir un número. (MenuBases)
+
+    public static void main(String[] args) {
+
+        int opcion = 0;
+        int num = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bienvenido a la aplicación de cálculos:");
+        do {
+            System.out.println("\t1.Pasar a base2");
+            System.out.println("\t2.Pasar a base8");
+            System.out.println("\t3.Pasar a base16");
+            System.out.println("\t4. Salir");
+            System.out.print("Selecciona la base a la que quieras pasar:");
+            opcion = scanner.nextInt();
+            if (opcion > 0 && opcion < 4) {
+                System.out.print("Indica el numero:");
+                num = scanner.nextInt();
+            }
+            switch (opcion) {
+                case 1:
+                    String base2 = Integer.toBinaryString(num);
+                    System.out.println("El numero en base 2 es:" +base2);
+                    break;
+                case 2:
+                    String base8 = Integer.toOctalString(num);
+                    System.out.println("El numero en base 8 es:" +base8);
+                    break;
+                case 3:
+                    String base16 = Integer.toHexString(num).toUpperCase();
+                    System.out.println("El numero en base 16 es:" +base16);
+                    break;
+                case 4:
+                    System.out.println("Saliendo del programa...");
+                    break;
+                default:
+                    System.out.print("Opción no contemplada");
+                    break;
+            }
+        } while (opcion != 4);
+
+        System.out.print("Fin del menú");
+ */
+    }
 
 
 
