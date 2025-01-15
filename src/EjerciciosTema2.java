@@ -1327,14 +1327,96 @@ siguiente modo: F(0) = 1; F(1) = 1; F(n) = n(n-1)(n-2) ... 1 siendo n>1. (Factor
         System.out.printf("El factorial de %d es %d",numero,factorial);
     }
  */
+//Ejercicio FOREACH
+        /*
+Pedir un número por teclado. En el caso que el número introducir sea mayor que 10 o menor que 0 el programa
+parará la ejecución con el mensaje "dato erróneo". En caso contrario mostrará la tabla de multiplicar del número
+introducido con la siguiente estructura: "5 por 1 = 5" "5 por 2 = 10" ...
+
+public static void main(String[] args) {
+    Scanner scanner=new Scanner(System.in);
+    int[] numeros = {1,2,3,4,5,6,7,8,9,10};
+
+    System.out.println("Escoge un numero:");
+    int numeroAleatorio= scanner.nextInt();
+    for (int tabla:numeros){
+        if (numeroAleatorio<0 || numeroAleatorio>10){
+            System.out.println("dato erróneo");
+        } else {
+            System.out.printf("%d por %d = %d\n",numeroAleatorio,tabla,numeroAleatorio*tabla);
+        }
+    }
+
+}
+         */
 
 //EJERCICIOS WHILE-DO WHILE
     //Ejercicio 1
+        /*
+Leer números enteros hasta introducir un 0. El programa obtendrá la suma de todos
+los números positivos. (SumarPositivos)
+
+public static void main(String[] args) {
+    System.out.println("Introduce un número:");
+    Scanner scanner=new Scanner(System.in);
+    int numero= scanner.nextInt();
+    int sumarPositivos=0;
+
+    if (numero>0){
+        sumarPositivos+=numero;
+    }
+    while (numero!=0){
+        System.out.println("Introduce un número:");
+        numero= scanner.nextInt();
+       if (numero>0){
+        sumarPositivos+=numero;
+       }
+    }
+        System.out.println("La suma de numeros positivos es: "+sumarPositivos);
+
+}
+
+     */
+    //Ejercicio 2
+        /*
+        Calcúlese el mínimo común múltiplo de dos números entre 1 y 100. Para obtener el mcm se tomará uno de los
+        valores introducidos y se irá multiplicando por 1, 2, 3, etc, hasta que el valor obtenido sea múltiplo del
+        otro número, que sería el valor buscado. (MinimoComunMultiplo)
+
+
+public static void main(String[] args) {
+    Scanner scanner=new Scanner(System.in);
+    System.out.println("Introduce el primer numero:");
+    int num1= scanner.nextInt();
+    System.out.println("Introduce el segundo numero:");
+    int num2= scanner.nextInt();
+
+   if (num1<1 || num1>100 || num2<1 || num2>100 ) {
+    System.out.println("Los números deben estar entre 1 y 100");
+    return;
+   }
+   int mcm=num1;
+   int multiplicador=1;
+
+   while (mcm%num2!=0) {
+       mcm = num1 * multiplicador;
+       multiplicador++;
+   }
+
+    System.out.printf("El mcm entre %d y %d es %d",num1,num2,mcm);
+
+
+
+
+
+}
+
+         */
+    //Ejercicio 3
     /*
 
      */
 }
-
 
 
 
