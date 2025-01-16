@@ -22,7 +22,6 @@ public class Ejercicios_binario_octal_hexadecimal {
         System.out.println("Octal: " + octal);
         System.out.println("Hexadecimal: " + hexa);
 
-
     }
 
      */
